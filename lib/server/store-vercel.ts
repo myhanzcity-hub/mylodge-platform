@@ -12,7 +12,9 @@ function stable(value: unknown): string {
   return `{${Object.entries(value).sort(([a], [b]) => a.localeCompare(b)).map(([k,v]) => `${JSON.stringify(k)}:${stable(v)}`).join(",")}}`;
 }
 async function load(user: PreviewUser) {
-  const blob = await get(key(user), { access: "private", useCache: false });
+  // Identity encoding preserves the strong origin ETag required by conditional puts.
+  // Compressed responses expose W/ ETags which Blob correctly refuses for writes.
+  const blob = await get(key(user), { access: "private", useCache: false, headers: { "Accept-Encoding": "identity" } });
   if (!blob) return { data: { state: createStore(user, new Date().toISOString()), receipts: {} } as Envelope, etag: undefined };
   if (blob.statusCode !== 200) throw new DomainError("저장소 응답을 다시 확인해 주세요.", 503);
   return { data: await new Response(blob.stream).json() as Envelope, etag: blob.blob.etag };
