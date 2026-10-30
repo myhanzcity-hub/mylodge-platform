@@ -1,0 +1,12 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build:vercel",
+  "env": {
+    "MYLODGE_RUNTIME": "vercel"
+  },
+  "build": {
+    "env": {
+      "MYLODGE_RUNTIME": "vercel"
+    }
+  }
+}

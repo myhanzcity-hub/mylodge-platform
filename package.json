@@ -16,12 +16,14 @@
     "test:domain": "node --experimental-transform-types --test tests/domain.test.ts",
     "test:api": "node --test tests/api.test.mjs",
     "test:e2e": "playwright test",
-    "preview:local": "node scripts/local-start.mjs"
+    "preview:local": "node scripts/local-start.mjs",
+    "build:vercel": "next build --webpack"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@hookform/resolvers": "^5.7.1",
     "@shadcn/react": "^0.3.0",
+    "@vercel/blob": "^2.8.2",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "cmdk": "^1.1.1",

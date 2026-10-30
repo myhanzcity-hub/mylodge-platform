@@ -64,3 +64,14 @@ npm run build
 Pretendard Variable 1.3.9를 로컬로 제공합니다. SIL Open Font License 1.1은 `public/fonts/LICENSE.txt`에 있습니다.
 
 현재 모든 계약·예약·입금·보상·정산 업무는 **본인에게 격리된 체험 환경**입니다. 실제 운영자 멤버십, 전역 재고, 실회원 교환, 외부 결제·서명·발송과 사업 조건은 운영 전 별도 연결·검증이 필요합니다. 이 경계와 완료 범위는 `docs/implementation-status.md`에서 확인할 수 있습니다.
+
+
+## Vercel deployment
+
+`npm run build:vercel` builds native Next.js; the original Vinext local/Cloudflare scripts remain available. `vercel.json` selects this build and `MYLODGE_RUNTIME=vercel`.
+
+Vercel uses private Vercel Blob (`BLOB_READ_WRITE_TOKEN`, server only) with per-session aggregate JSON and ETag conditional writes. State and idempotency receipts commit together; conflicting updates retry and the aggregate has a 1.5 MB limit. No records are silently removed. The existing D1 adapter is retained for Cloudflare.
+
+`MYLODGE_PREVIEW_SESSION_SECRET` must be a random server secret. The sign-in entry opens a signed HttpOnly, SameSite=Lax 30-day browser preview session. It is not ChatGPT authentication or a verified identity. Incoming `oai-authenticated-*` headers are ignored on Vercel. Cookies identify an isolated sandbox, not real admin authority. Clearing cookies loses access to that sandbox. Real payments, contracts, rentals and payouts remain disabled.
+
+Deployment secrets belong in Vercel environment variables; never commit `.env*` or `.vercel/`. GitHub/Vercel project: `mylodge-platform`; existing MyLodge presentation projects are separate.
