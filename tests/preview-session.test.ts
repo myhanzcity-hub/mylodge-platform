@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { signSession, verifySession } from "../lib/server/preview-session.ts";
+const sessionPath = "../lib/server/preview-session.ts";
+const { signSession, verifySession } = await import(sessionPath);
 
 test("preview cookies require an intact signature, secret and future expiry", () => {
   const id = "6ef97da2-f31f-4bb7-ae27-c3a808452641";
