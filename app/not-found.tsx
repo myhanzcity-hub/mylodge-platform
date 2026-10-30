@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main className="container" style={{padding:'100px 0',minHeight:'75vh'}}><a className="brand" href="/">my lodge.</a><p className="eyebrow" style={{marginTop:70}}>404 · A DIFFERENT PATH</p><h1 style={{fontSize:40,marginBottom:20}}>이 길에는 아직<br/>별장이 없어요.</h1><p className="muted" style={{marginBottom:30}}>주소를 확인하거나 별장 탐색에서 다시 시작해 주세요.</p><Link className="button" href="/lodges">별장 둘러보기</Link></main>}

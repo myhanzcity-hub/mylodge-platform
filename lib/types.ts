@@ -1,0 +1,3 @@
+export type RecordItem = {id:string; type:string; status:string; title:string; data:Record<string,any>; createdAt:string; updatedAt:string};
+export type WorkspaceState = {mode:"preview"; user:{id:string;name:string;email:string}; records:RecordItem[]; ledger:{granted:number;held:number;booked:number;used:number;available:number}; inventory:{allocated:number;capacity:number}; saved:string[]; capabilities:{liveContracts:false;livePayments:false;livePayouts:false;liveRentals:false}; policies:Record<string,any>};
+export type ActionResult = {ok:boolean;message?:string;error?:string;state?:WorkspaceState;record?:RecordItem;holdId?:string};

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "hero",
+    "path": "/images/hero.jpeg",
+    "page": 2,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "coast",
+    "path": "/images/coast.jpeg",
+    "page": 7,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "aerial",
+    "path": "/images/aerial.jpeg",
+    "page": 10,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "villa-mint",
+    "path": "/images/villa-mint.jpeg",
+    "page": 13,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "villa-rose",
+    "path": "/images/villa-rose.jpeg",
+    "page": 14,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "villa-coral",
+    "path": "/images/villa-coral.jpeg",
+    "page": 15,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "villa-wood",
+    "path": "/images/villa-wood.jpeg",
+    "page": 16,
+    "width": 2048,
+    "height": 1143
+  },
+  {
+    "name": "style-pink",
+    "path": "/images/style-pink.jpeg",
+    "page": 21,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-mint",
+    "path": "/images/style-mint.jpeg",
+    "page": 22,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-lavender",
+    "path": "/images/style-lavender.jpeg",
+    "page": 23,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-peach",
+    "path": "/images/style-peach.jpeg",
+    "page": 24,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-blue",
+    "path": "/images/style-blue.jpeg",
+    "page": 25,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-coral",
+    "path": "/images/style-coral.jpeg",
+    "page": 26,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-sage",
+    "path": "/images/style-sage.jpeg",
+    "page": 27,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-rose",
+    "path": "/images/style-rose.jpeg",
+    "page": 28,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-yellow",
+    "path": "/images/style-yellow.jpeg",
+    "page": 29,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "style-gray",
+    "path": "/images/style-gray.jpeg",
+    "page": 30,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "market",
+    "path": "/images/market.jpeg",
+    "page": 36,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "dining",
+    "path": "/images/dining.jpeg",
+    "page": 37,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "cart",
+    "path": "/images/cart.jpeg",
+    "page": 39,
+    "width": 1376,
+    "height": 768
+  },
+  {
+    "name": "entertainment",
+    "path": "/images/entertainment.jpeg",
+    "page": 40,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "name": "pool",
+    "path": "/images/pool.jpeg",
+    "page": 42,
+    "width": 1376,
+    "height": 768
+  }
+]
